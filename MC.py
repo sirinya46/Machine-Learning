@@ -52,7 +52,7 @@ transmission_map = {
 }
 with st.sidebar:
     selected = option_menu('Prediction',
-                           ['Ridingmower','Used_cars','BMI'])
+                           ['Ridingmower','Used_cars','bmi'])
 
 if selected== 'Ridingmower':
     st.title('Riding Mower Classification')
@@ -96,4 +96,5 @@ if selected == 'Used_cars':
         Price_predict = round(Price_predict[0],2)
 
     st.success(Price_predict)
+
 
