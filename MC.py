@@ -54,8 +54,8 @@ with st.sidebar:
     selected = option_menu('Prediction',
                            ['Ridingmower','Used_cars','bmi'])
 
-if selected== 'Ridingmower':
-    st.title('Riding Mower Classification')
+if selected== 'bmi':
+    st.title('bmi Classification')
     
     Income = st.text_input('Income')
     LotSize = st.text_input('LotSize')
@@ -96,5 +96,6 @@ if selected == 'Used_cars':
         Price_predict = round(Price_predict[0],2)
 
     st.success(Price_predict)
+
 
 
